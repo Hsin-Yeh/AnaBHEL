@@ -1,0 +1,106 @@
+# Hey Emacs, this is a -*- org -*- file ...
+#+TITLE:     AnaBHEL Single Photon IR detector R&D
+#+AUTHOR:    Hsin-Yeh Wu
+#+EMAIL:     (thankyouyou@gmail.com)
+#+DESCRIPTION: Org mode syntax example
+#+KEYWORDS:  AnaBHEL, black hole, single photon detector, SNSPD, KID, Entanglement, Polarization
+#+LANGUAGE:  en
+#+OPTIONS:   H:5 num:nil toc:5 p:t
+
+#+SETUPFILE: org-html-themes/org/theme-bigblow-local.setup
+
+#+PROPERTY:  header-args :eval never-export
+
+* Overview
+
+** AnaBHEL Description :Intro:
+
+#+ATTR_HTML: :width 640
+#+CAPTION: Schematic layout of the AnaBHEL experiment. On the left is where we would receive the expected red shifted Hawking IR photon, and the partner mode would be on the other side which an XUV single photon detector is used. The signal photon pair are extracted from vacuum, therefore entangled and polarization anticorrelated.
+[[file:Overview/2021-07-07_19-08-46_2021-07-07_18-49-02_2021-07-07_18-48-24_Screen Shot 2021-07-07 at 6.48.18 PM.png]]
+
+** A review of SPD candidates :Intro:
+
+cite:morozov18_super_confer_presen
+
+cite:taylor20_mid_confer_presen
+
+| Detector                   | NEP (W/\sqrt{Hz})  | Single-photon sensitive? | Efficiency         | Time Constant               |
+|----------------------------+--------------------+--------------------------+--------------------+-----------------------------|
+| MCT (HgCdTe)               | 10^{-19}           | Preliminary results      | High               | ~100ns                      |
+| SC detectors (KID/TES/HEP) | 10^{-16}           | Yes                      | High               | ~0.01 - 1ms                 |
+| Mid-IR up-conversion       | Detector-dependent | Detector-dependent       | ~20%               | Detector-dependent          |
+| Commercial (InAsSb)        | 10^{-11}           | No                       |                    | ~10 μs                      |
+| SNSPD                      | 10^{-21}           | Yes                      | 20% (current, 2um) | Free-running, jitter < 90us |
+
+*** SPAD
+*** SNSPD
+*** KID
+
+** Detector R&D Flow Chart :Plan:Intro:
+
+#+ATTR_HTML: :width 700
+[[file:Overview/2021-07-09_15-45-38_Screen Shot 2021-07-09 at 3.45.35 PM.png]]
+
+* Todo
+** Create shared platform to edit project documents :General:
+*** STRT Finalize the format
+*** DONE Create git repository
+CLOSED: [2021-07-09 Fri 16:15]
+*** TODO Find a way to share the website
+
+** Sputter Coating :Sputter:
+*** First thin film @ NEMS Facility
+Goal: To get familiar with superconducting thin film growing, measure the superconductivity in a cryogenic system. I plan to grow a 300nm Nb film on top of SiO_{2} substrate using the sputter machine at NEMS facility.cite:NEMS_official
+
+**** WAIT Nb & Ti Target :Sputter:
+Ordered with Gredmann group on 2021-06-07
+
+Contact : Bella Leng
+
+Mail : bella.leng@gredmann.com
+
+[[file:Todo/2021-07-09_09-49-32_Stathes Paganis-1.pdf][Quotation]]
+
+**** TODO Substrate :Sputter:
+
+**** TODO Discuss Parameters
+
+** Sputter Machine Purchase :Sputter:
+*** DONE Clean room visit
+CLOSED: [2021-06-30 Wed 16:12]
+*** DONE Cost discussion with Lin
+CLOSED: [2021-07-05 Mon 11:02]
+*** WAIT Sputter Machine spec
+<2021-05-11 Tue> Rough quotation, close to what we need [[file:Todo/2021-07-10_13-20-57_臺灣大學-MGS-500高真空磁控共濺鍍系統2021051101_xlsx.pdf][Quotation1]]
+
+<2021-07-01 Thu> Replace 1 DC gun with 1 RF gun [[file:Todo/2021-07-10_13-17-39_臺灣大學-MGS-500高真空磁控共濺鍍系統2021070101_xlsx.pdf][Quotation2]]
+
+*** WAIT Approved by PI
+* Device Fabrication
+Here are the needed fabrication and experiment steps for building SNSPD. Many parts is inspired of the work from Glasgow University group, and modified to the equipment we have here.
+cite:erotokritou19_next_gener_super_nanow_singl_photon_detec
+
+** Sputter
+** E beam Lithography
+
+** Etching
+
+* Experimental Methods
+** Cryogenic system :Cryogenic:
+** Tc measurement :Cryogenic:Characteristic:
+** SEM :Characteristic:
+** Readout system :DAQ:
+** Single Photon source :Characteristic:SinglePhoton:
+* Log
+** 2021-07-07 Sputter cost discussion :Sputter:
+We have two options:
+1. Get 50% discount everytime we use.
+2. Get us a period of free operation time
+
+Estimate cost for one thin film : 1k NTD
+
+* Reference
+
+bibliographystyle:unsrt
+bibliography:../../references/reference.bib

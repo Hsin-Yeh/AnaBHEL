@@ -1,0 +1,9 @@
+#+TITLE: Test
+
+#+name: test
+| 555 | 66      |
+|  te | tef     |
+| 555 | ftre 5f |
+| 555 | ftre 5f |
+
+transclude:file:transcluding-org-elements.org::testtransclude:file:transcluding-org-elements.org::*archive
