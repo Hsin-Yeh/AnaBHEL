@@ -93,7 +93,7 @@ cite:erotokritou19_next_gener_super_nanow_singl_photon_detec
 ** Readout system :DAQ:
 ** Single Photon source :Characteristic:SinglePhoton:
 * Log
-** 2021-07-07 Sputter cost discussion :Sputter:
+** <2021-07-05 Mon> Sputter cost discussion :Sputter:
 We have two options:
 1. Get 50% discount everytime we use.
 2. Get us a period of free operation time
