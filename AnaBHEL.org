@@ -6,14 +6,18 @@
 #+KEYWORDS:  AnaBHEL, black hole, single photon detector, SNSPD, KID, Entanglement, Polarization
 #+LANGUAGE:  en
 #+OPTIONS:   H:5 num:nil toc:5 p:t
+#+latex_header: \usepackage[version=3]{mhchem}
+#+latex_header: \usepackage{float}
 
 #+SETUPFILE: org-html-themes/org/theme-bigblow-local.setup
 
 #+PROPERTY:  header-args :eval never-export
 
-* Overview
+* Overview :export:
 
 ** AnaBHEL Description :Intro:
+
+The modtivation for us to start developing this detector is to detect polarized Infra-red single photons. In the AnaBHEL experiment cite:chenAcceleratingPlasmaMirrors2017 proposed by Pisin Chen and Gerard Mourou, a plasma wakefield is produced by a strong laser plus supersonic gas jet. The longitudinal density profile (along the laser axis) of the gas jet should be tuned to have a steep gradient, so that plasma wakefield phase velocity would go through a large acceleration. The plasma wakefield is like a mirror with low reflectivity (~10^-4, should add reference here), and when it is under large acceleration there is a possibility that it could pull out vacuum quantum fluctuation photon pairs! This effect is analogous to the famous Hawking evaporation cite:hawkingParticleCreationBlack1975 produced in the black hole scenerio. If one of the photon of the vacuum flluctuation photon pair gets reflected by the plasma wakefield mirror, and one doesn't, then the vacuum photon pair won't go back to vacuum. The reflected photon would go througn a red shift, similar to the Hawking radiation case, resulting at sub-ev level ( Infra-red region ). The photon partner would never catch up the plasma mirror, just like the Hawking partner trapped by the black hole. However in the AnaBHEL case there is an interesting different, the partner mode would penetrate whenever the wakefield collapse at the edge of the gas jet, resulting to be a detectable photon, and because this photon wouldn't go through red shift, the energy scale is differernt to the reflected photon (or we could say the Hawking photon). This effect induced a requirement to set up a detector system for single photon pairs, which are time correlated, polarization correlated, back to back in space, energy scale at different level, one targeting at the mid infra-red region ( 1-10um ), the other targeting at visible light to soft UV region.
 
 #+ATTR_HTML: :width 640
 #+CAPTION: Schematic layout of the AnaBHEL experiment. On the left is where we would receive the expected red shifted Hawking IR photon, and the partner mode would be on the other side which an XUV single photon detector is used. The signal photon pair are extracted from vacuum, therefore entangled and polarization anticorrelated.
@@ -21,10 +25,8 @@
 
 ** A review of SPD candidates :Intro:
 
-cite:morozov18_super_confer_presen
-
-cite:taylor20_mid_confer_presen
-
+#+begin_table
+#+ATTR_LATEX: :center nil
 | Detector                   | NEP (W/\sqrt{Hz})  | Single-photon sensitive? | Efficiency         | Time Constant               |
 |----------------------------+--------------------+--------------------------+--------------------+-----------------------------|
 | MCT (HgCdTe)               | 10^{-19}           | Preliminary results      | High               | ~100ns                      |
@@ -42,18 +44,23 @@ cite:taylor20_mid_confer_presen
 #+ATTR_HTML: :width 700
 [[file:Overview/2021-07-09_15-45-38_Screen Shot 2021-07-09 at 3.45.35 PM.png]]
 
-* Todo
-** Create shared platform to edit project documents :General:
-*** STRT Finalize the format
+* Todo :export:
+** DONE Create shared platform to edit project documents :General:
+CLOSED: [2021-07-16 Fri 15:46]
+*** DONE Finalize the format
+CLOSED: [2021-07-16 Fri 15:45]
 *** DONE Create git repository
 CLOSED: [2021-07-09 Fri 16:15]
-*** TODO Find a way to share the website
+*** DONE Find a way to share the website
+CLOSED: [2021-07-16 Fri 15:45]
+Github website : https://hsin-yeh.github.io/AnaBHEL/AnaBHEL.html
 
 ** Sputter Coating :Sputter:
 *** First thin film @ NEMS Facility
-Goal: To get familiar with superconducting thin film growing, measure the superconductivity in a cryogenic system. I plan to grow a 300nm Nb film on top of SiO_{2} substrate using the sputter machine at NEMS facility.cite:NEMS_official
+Goal: To get familiar with superconducting thin film growing, measure the superconductivity in a cryogenic system. I plan to grow a 300nm Nb film on top of SiO_{2} substrate using the sputter machine at NEMS facility.
 
-**** WAIT Nb & Ti Target :Sputter:
+**** DONE Nb & Ti Target :Sputter:
+CLOSED: [2021-07-16 Fri 09:33]
 Ordered with Gredmann group on 2021-06-07
 
 Contact : Bella Leng
@@ -62,9 +69,21 @@ Mail : bella.leng@gredmann.com
 
 [[file:Todo/2021-07-09_09-49-32_Stathes Paganis-1.pdf][Quotation]]
 
-**** TODO Substrate :Sputter:
+**** HOLD Substrate :Sputter:
+
+***** Possible substrates:
+- SiO2/Si: PVCVD, Lin could help produce these substrates.
+- MgO
+- Sapphire
+
 
 **** TODO Discuss Parameters
+- Target thickness : 300nm
+- Substrate : SiO2
+- 0.2 Pa chamber pressure
+- 0.9 A discharge current
+ should measure 9.1K of Tc
+
 
 ** Sputter Machine Purchase :Sputter:
 *** DONE Clean room visit
@@ -77,22 +96,30 @@ CLOSED: [2021-07-05 Mon 11:02]
 <2021-07-01 Thu> Replace 1 DC gun with 1 RF gun [[file:Todo/2021-07-10_13-17-39_臺灣大學-MGS-500高真空磁控共濺鍍系統2021070101_xlsx.pdf][Quotation2]]
 
 *** WAIT Approved by PI
-* Device Fabrication
+
+
+** Tc measurement
+*** WAIT Cryogenic system setup
+- <2021-07-16 Fri> Waiting for the cryostat head that was sent to America
+
+*** TODO Contact Professor Chen from NCU
+
+
+* Device Fabrication :export:
 Here are the needed fabrication and experiment steps for building SNSPD. Many parts is inspired of the work from Glasgow University group, and modified to the equipment we have here.
-cite:erotokritou19_next_gener_super_nanow_singl_photon_detec
 
 ** Sputter
 ** E beam Lithography
 
 ** Etching
 
-* Experimental Methods
+* Experimental Methods :export:
 ** Cryogenic system :Cryogenic:
 ** Tc measurement :Cryogenic:Characteristic:
 ** SEM :Characteristic:
 ** Readout system :DAQ:
 ** Single Photon source :Characteristic:SinglePhoton:
-* Log
+* Log :export:
 ** <2021-07-05 Mon> Sputter cost discussion :Sputter:
 We have two options:
 1. Get 50% discount everytime we use.
@@ -100,7 +127,4 @@ We have two options:
 
 Estimate cost for one thin film : 1k NTD
 
-* Reference
-
-bibliographystyle:unsrt
-bibliography:../../references/reference.bib
+* Reference :export:
