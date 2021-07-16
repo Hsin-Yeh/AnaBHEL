@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-07-10 Sat 13:24 -->
+<!-- 2021-07-16 Fri 15:46 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>AnaBHEL Single Photon IR detector R&amp;D</title>
@@ -258,84 +258,97 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org12843a9">Overview</a>
+<li><a href="#org9694a53">Overview&#xa0;&#xa0;&#xa0;<span class="tag"><span class="export">export</span></span></a>
 <ul>
-<li><a href="#orgbd9d1fb">AnaBHEL Description&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Intro">Intro</span></span></a></li>
-<li><a href="#org48ff867">A review of SPD candidates&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Intro">Intro</span></span></a>
+<li><a href="#org86eddd0">AnaBHEL Description&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Intro">Intro</span></span></a></li>
+<li><a href="#org275552f">A review of SPD candidates&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Intro">Intro</span></span></a>
 <ul>
-<li><a href="#org05f74c4">SPAD</a></li>
-<li><a href="#orgd4a6faa">SNSPD</a></li>
-<li><a href="#org607a2f2">KID</a></li>
+<li><a href="#org034650d">SPAD</a></li>
+<li><a href="#org59f6da7">SNSPD</a></li>
+<li><a href="#org3d095c0">KID</a></li>
 </ul>
 </li>
-<li><a href="#org29485f8">Detector R&amp;D Flow Chart&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Plan">Plan</span>&#xa0;<span class="Intro">Intro</span></span></a></li>
+<li><a href="#orgb651224">Detector R&amp;D Flow Chart&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Plan">Plan</span>&#xa0;<span class="Intro">Intro</span></span></a></li>
 </ul>
 </li>
-<li><a href="#org6c984bd">Todo</a>
+<li><a href="#org359af34">Todo&#xa0;&#xa0;&#xa0;<span class="tag"><span class="export">export</span></span></a>
 <ul>
-<li><a href="#org3df9514">Create shared platform to edit project documents&#xa0;&#xa0;&#xa0;<span class="tag"><span class="General">General</span></span></a>
+<li><a href="#orgb9b61e7"><span class="done DONE">DONE</span> Create shared platform to edit project documents&#xa0;&#xa0;&#xa0;<span class="tag"><span class="General">General</span></span></a>
 <ul>
-<li><a href="#org399574d"><span class="todo STRT">STRT</span> Finalize the format</a></li>
-<li><a href="#org6693d0f"><span class="done DONE">DONE</span> Create git repository</a></li>
-<li><a href="#org6e63556"><span class="todo TODO">TODO</span> Find a way to share the website</a></li>
+<li><a href="#orgf5f1da6"><span class="done DONE">DONE</span> Finalize the format</a></li>
+<li><a href="#org10d8d53"><span class="done DONE">DONE</span> Create git repository</a></li>
+<li><a href="#org966cf21"><span class="done DONE">DONE</span> Find a way to share the website</a></li>
 </ul>
 </li>
-<li><a href="#orga7f8222">Sputter Coating&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Sputter">Sputter</span></span></a>
+<li><a href="#org7fcb4af">Sputter Coating&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Sputter">Sputter</span></span></a>
 <ul>
-<li><a href="#orgc8d5a6f">First thin film @ NEMS Facility</a>
+<li><a href="#orgfeabb64">First thin film @ NEMS Facility</a>
 <ul>
-<li><a href="#orgf8a1f23"><span class="todo WAIT">WAIT</span> Nb &amp; Ti Target&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Sputter">Sputter</span></span></a></li>
-<li><a href="#org32c903e"><span class="todo TODO">TODO</span> Substrate&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Sputter">Sputter</span></span></a></li>
-<li><a href="#orgeb63b18"><span class="todo TODO">TODO</span> Discuss Parameters</a></li>
+<li><a href="#orgd7df34c"><span class="done DONE">DONE</span> Nb &amp; Ti Target&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Sputter">Sputter</span></span></a></li>
+<li><a href="#org6b89e12"><span class="todo HOLD">HOLD</span> Substrate&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Sputter">Sputter</span></span></a>
+<ul>
+<li><a href="#orgf083801">Possible substrates:</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="#org24160c4">Sputter Machine Purchase&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Sputter">Sputter</span></span></a>
-<ul>
-<li><a href="#org2d9da6c"><span class="done DONE">DONE</span> Clean room visit</a></li>
-<li><a href="#org21535de"><span class="done DONE">DONE</span> Cost discussion with Lin</a></li>
-<li><a href="#org20533dc"><span class="todo WAIT">WAIT</span> Sputter Machine spec</a></li>
-<li><a href="#orgc576b9b"><span class="todo WAIT">WAIT</span> Approved by PI</a></li>
+<li><a href="#org07b57a2"><span class="todo TODO">TODO</span> Discuss Parameters</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org80ae130">Device Fabrication</a>
+<li><a href="#orgab9061b">Sputter Machine Purchase&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Sputter">Sputter</span></span></a>
 <ul>
-<li><a href="#orgecb5aad">Sputter</a></li>
-<li><a href="#org7e9220a">E beam Lithography</a></li>
-<li><a href="#org818bab1">Etching</a></li>
+<li><a href="#org3d3deb8"><span class="done DONE">DONE</span> Clean room visit</a></li>
+<li><a href="#orgeb70e6b"><span class="done DONE">DONE</span> Cost discussion with Lin</a></li>
+<li><a href="#orga34eb0d"><span class="todo WAIT">WAIT</span> Sputter Machine spec</a></li>
+<li><a href="#orgea21721"><span class="todo WAIT">WAIT</span> Approved by PI</a></li>
 </ul>
 </li>
-<li><a href="#org4eaae45">Experimental Methods</a>
+<li><a href="#org64ebf08">Tc measurement</a>
 <ul>
-<li><a href="#orgac7b326">Cryogenic system&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Cryogenic">Cryogenic</span></span></a></li>
-<li><a href="#orgf56de6c">Tc measurement&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Cryogenic">Cryogenic</span>&#xa0;<span class="Characteristic">Characteristic</span></span></a></li>
-<li><a href="#orgc4bd872">SEM&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Characteristic">Characteristic</span></span></a></li>
-<li><a href="#orge35e324">Readout system&#xa0;&#xa0;&#xa0;<span class="tag"><span class="DAQ">DAQ</span></span></a></li>
-<li><a href="#orgcd68dcb">Single Photon source&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Characteristic">Characteristic</span>&#xa0;<span class="SinglePhoton">SinglePhoton</span></span></a></li>
+<li><a href="#org8490440"><span class="todo WAIT">WAIT</span> Cryogenic system setup</a></li>
+<li><a href="#orgd934d26"><span class="todo TODO">TODO</span> Contact Professor Chen from NCU</a></li>
 </ul>
 </li>
-<li><a href="#orga382064">Log</a>
-<ul>
-<li><a href="#org655da3c">2021-07-07 Sputter cost discussion&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Sputter">Sputter</span></span></a></li>
 </ul>
 </li>
-<li><a href="#orga086ce9">Reference</a></li>
+<li><a href="#orga4e960d">Device Fabrication&#xa0;&#xa0;&#xa0;<span class="tag"><span class="export">export</span></span></a>
+<ul>
+<li><a href="#org916b4a7">Sputter</a></li>
+<li><a href="#org0ac5d7a">E beam Lithography</a></li>
+<li><a href="#orge806e56">Etching</a></li>
+</ul>
+</li>
+<li><a href="#org7c38367">Experimental Methods&#xa0;&#xa0;&#xa0;<span class="tag"><span class="export">export</span></span></a>
+<ul>
+<li><a href="#orgf60a8dc">Cryogenic system&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Cryogenic">Cryogenic</span></span></a></li>
+<li><a href="#orge49f670">Tc measurement&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Cryogenic">Cryogenic</span>&#xa0;<span class="Characteristic">Characteristic</span></span></a></li>
+<li><a href="#org387620e">SEM&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Characteristic">Characteristic</span></span></a></li>
+<li><a href="#org556ab8a">Readout system&#xa0;&#xa0;&#xa0;<span class="tag"><span class="DAQ">DAQ</span></span></a></li>
+<li><a href="#org3cadec0">Single Photon source&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Characteristic">Characteristic</span>&#xa0;<span class="SinglePhoton">SinglePhoton</span></span></a></li>
+</ul>
+</li>
+<li><a href="#org7b607fc">Log&#xa0;&#xa0;&#xa0;<span class="tag"><span class="export">export</span></span></a>
+<ul>
+<li><a href="#org7da0f98"><span class="timestamp-wrapper"><span class="timestamp">&lt;2021-07-05 Mon&gt; </span></span> Sputter cost discussion&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Sputter">Sputter</span></span></a></li>
+</ul>
+</li>
+<li><a href="#org92ab5b4">Reference&#xa0;&#xa0;&#xa0;<span class="tag"><span class="export">export</span></span></a></li>
 </ul>
 </div>
 </div>
+<div id="outline-container-org9694a53" class="outline-2">
+<h2 id="org9694a53">Overview&#xa0;&#xa0;&#xa0;<span class="tag"><span class="export">export</span></span></h2>
+<div class="outline-text-2" id="text-org9694a53">
+</div>
+<div id="outline-container-org86eddd0" class="outline-3">
+<h3 id="org86eddd0">AnaBHEL Description&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Intro">Intro</span></span></h3>
+<div class="outline-text-3" id="text-org86eddd0">
+<p>
+The modtivation for us to start developing this detector is to detect polarized Infra-red single photons. In the AnaBHEL experiment <a class='org-ref-reference' href="#chenAcceleratingPlasmaMirrors2017">chenAcceleratingPlasmaMirrors2017</a> proposed by Pisin Chen and Gerard Mourou, a plasma wakefield is produced by a strong laser plus supersonic gas jet. The longitudinal density profile (along the laser axis) of the gas jet should be tuned to have a steep gradient, so that plasma wakefield phase velocity would go through a large acceleration. The plasma wakefield is like a mirror with low reflectivity (~10<sup>-4</sup>, should add reference here), and when it is under large acceleration there is a possibility that it could pull out vacuum quantum fluctuation photon pairs! This effect is analogous to the famous Hawking evaporation <a class='org-ref-reference' href="#hawkingParticleCreationBlack1975">hawkingParticleCreationBlack1975</a> produced in the black hole scenerio. If one of the photon of the vacuum flluctuation photon pair gets reflected by the plasma wakefield mirror, and one doesn&rsquo;t, then the vacuum photon pair won&rsquo;t go back to vacuum. The reflected photon would go througn a red shift, similar to the Hawking radiation case, resulting at sub-ev level ( Infra-red region ). The photon partner would never catch up the plasma mirror, just like the Hawking partner trapped by the black hole. However in the AnaBHEL case there is an interesting different, the partner mode would penetrate whenever the wakefield collapse at the edge of the gas jet, resulting to be a detectable photon, and because this photon wouldn&rsquo;t go through red shift, the energy scale is differernt to the reflected photon (or we could say the Hawking photon). This effect induced a requirement to set up a detector system for single photon pairs, which are time correlated, polarization correlated, back to back in space, energy scale at different level, one targeting at the mid infra-red region ( 1-10um ), the other targeting at visible light to soft UV region.
+</p>
 
-<div id="outline-container-org12843a9" class="outline-2">
-<h2 id="org12843a9">Overview</h2>
-<div class="outline-text-2" id="text-org12843a9">
-</div>
-<div id="outline-container-orgbd9d1fb" class="outline-3">
-<h3 id="orgbd9d1fb">AnaBHEL Description&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Intro">Intro</span></span></h3>
-<div class="outline-text-3" id="text-orgbd9d1fb">
 
-<div id="org2a77e07" class="figure">
+<div id="org3bf11b6" class="figure">
 <p><img src="Overview/2021-07-07_19-08-46_2021-07-07_18-49-02_2021-07-07_18-48-24_Screen Shot 2021-07-07 at 6.48.18 PM.png" alt="2021-07-07_19-08-46_2021-07-07_18-49-02_2021-07-07_18-48-24_Screen Shot 2021-07-07 at 6.48.18 PM.png" width="640" />
 </p>
 <p><span class="figure-number">Figure 1: </span>Schematic layout of the AnaBHEL experiment. On the left is where we would receive the expected red shifted Hawking IR photon, and the partner mode would be on the other side which an XUV single photon detector is used. The signal photon pair are extracted from vacuum, therefore entangled and polarization anticorrelated.</p>
@@ -343,17 +356,12 @@
 </div>
 </div>
 
-<div id="outline-container-org48ff867" class="outline-3">
-<h3 id="org48ff867">A review of SPD candidates&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Intro">Intro</span></span></h3>
-<div class="outline-text-3" id="text-org48ff867">
+<div id="outline-container-org275552f" class="outline-3">
+<h3 id="org275552f">A review of SPD candidates&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Intro">Intro</span></span></h3>
+<div class="outline-text-3" id="text-org275552f">
 <p>
-<a class='org-ref-reference' href="#morozov18_super_confer_presen">morozov18_super_confer_presen</a>
+#+begin<sub>table</sub>
 </p>
-
-<p>
-<a class='org-ref-reference' href="#taylor20_mid_confer_presen">taylor20_mid_confer_presen</a>
-</p>
-
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -421,22 +429,22 @@
 </table>
 </div>
 
-<div id="outline-container-org05f74c4" class="outline-4">
-<h4 id="org05f74c4">SPAD</h4>
+<div id="outline-container-org034650d" class="outline-4">
+<h4 id="org034650d">SPAD</h4>
 </div>
-<div id="outline-container-orgd4a6faa" class="outline-4">
-<h4 id="orgd4a6faa">SNSPD</h4>
+<div id="outline-container-org59f6da7" class="outline-4">
+<h4 id="org59f6da7">SNSPD</h4>
 </div>
-<div id="outline-container-org607a2f2" class="outline-4">
-<h4 id="org607a2f2">KID</h4>
+<div id="outline-container-org3d095c0" class="outline-4">
+<h4 id="org3d095c0">KID</h4>
 </div>
 </div>
 
-<div id="outline-container-org29485f8" class="outline-3">
-<h3 id="org29485f8">Detector R&amp;D Flow Chart&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Plan">Plan</span>&#xa0;<span class="Intro">Intro</span></span></h3>
-<div class="outline-text-3" id="text-org29485f8">
+<div id="outline-container-orgb651224" class="outline-3">
+<h3 id="orgb651224">Detector R&amp;D Flow Chart&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Plan">Plan</span>&#xa0;<span class="Intro">Intro</span></span></h3>
+<div class="outline-text-3" id="text-orgb651224">
 
-<div id="org2475e34" class="figure">
+<div id="org47be8ff" class="figure">
 <p><img src="Overview/2021-07-09_15-45-38_Screen Shot 2021-07-09 at 3.45.35 PM.png" alt="2021-07-09_15-45-38_Screen Shot 2021-07-09 at 3.45.35 PM.png" width="700" />
 </p>
 </div>
@@ -444,43 +452,54 @@
 </div>
 </div>
 
-<div id="outline-container-org6c984bd" class="outline-2">
-<h2 id="org6c984bd">Todo</h2>
-<div class="outline-text-2" id="text-org6c984bd">
+<div id="outline-container-org359af34" class="outline-2">
+<h2 id="org359af34">Todo&#xa0;&#xa0;&#xa0;<span class="tag"><span class="export">export</span></span></h2>
+<div class="outline-text-2" id="text-org359af34">
 </div>
-<div id="outline-container-org3df9514" class="outline-3">
-<h3 id="org3df9514">Create shared platform to edit project documents&#xa0;&#xa0;&#xa0;<span class="tag"><span class="General">General</span></span></h3>
-<div class="outline-text-3" id="text-org3df9514">
+<div id="outline-container-orgb9b61e7" class="outline-3">
+<h3 id="orgb9b61e7"><span class="done DONE">DONE</span> Create shared platform to edit project documents&#xa0;&#xa0;&#xa0;<span class="tag"><span class="General">General</span></span></h3>
+<div class="outline-text-3" id="text-orgb9b61e7">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2021-07-16 Fri 15:46]</span></span></p>
 </div>
-<div id="outline-container-org399574d" class="outline-4">
-<h4 id="org399574d"><span class="todo STRT">STRT</span> Finalize the format</h4>
+<div id="outline-container-orgf5f1da6" class="outline-4">
+<h4 id="orgf5f1da6"><span class="done DONE">DONE</span> Finalize the format</h4>
+<div class="outline-text-4" id="text-orgf5f1da6">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2021-07-16 Fri 15:45]</span></span></p>
 </div>
-<div id="outline-container-org6693d0f" class="outline-4">
-<h4 id="org6693d0f"><span class="done DONE">DONE</span> Create git repository</h4>
-<div class="outline-text-4" id="text-org6693d0f">
+</div>
+<div id="outline-container-org10d8d53" class="outline-4">
+<h4 id="org10d8d53"><span class="done DONE">DONE</span> Create git repository</h4>
+<div class="outline-text-4" id="text-org10d8d53">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2021-07-09 Fri 16:15]</span></span></p>
 </div>
 </div>
-<div id="outline-container-org6e63556" class="outline-4">
-<h4 id="org6e63556"><span class="todo TODO">TODO</span> Find a way to share the website</h4>
+<div id="outline-container-org966cf21" class="outline-4">
+<h4 id="org966cf21"><span class="done DONE">DONE</span> Find a way to share the website</h4>
+<div class="outline-text-4" id="text-org966cf21">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2021-07-16 Fri 15:45]</span></span></p>
+<p>
+Github website : <a href="https://hsin-yeh.github.io/AnaBHEL/AnaBHEL.html">https://hsin-yeh.github.io/AnaBHEL/AnaBHEL.html</a>
+</p>
+</div>
 </div>
 </div>
 
-<div id="outline-container-orga7f8222" class="outline-3">
-<h3 id="orga7f8222">Sputter Coating&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Sputter">Sputter</span></span></h3>
-<div class="outline-text-3" id="text-orga7f8222">
+<div id="outline-container-org7fcb4af" class="outline-3">
+<h3 id="org7fcb4af">Sputter Coating&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Sputter">Sputter</span></span></h3>
+<div class="outline-text-3" id="text-org7fcb4af">
 </div>
-<div id="outline-container-orgc8d5a6f" class="outline-4">
-<h4 id="orgc8d5a6f">First thin film @ NEMS Facility</h4>
-<div class="outline-text-4" id="text-orgc8d5a6f">
+<div id="outline-container-orgfeabb64" class="outline-4">
+<h4 id="orgfeabb64">First thin film @ NEMS Facility</h4>
+<div class="outline-text-4" id="text-orgfeabb64">
 <p>
-Goal: To get familiar with superconducting thin film growing, measure the superconductivity in a cryogenic system. I plan to grow a 300nm Nb film on top of SiO<sub>2</sub> substrate using the sputter machine at NEMS facility.<a class='org-ref-reference' href="#NEMS_official">NEMS_official</a>
+Goal: To get familiar with superconducting thin film growing, measure the superconductivity in a cryogenic system. I plan to grow a 300nm Nb film on top of SiO<sub>2</sub> substrate using the sputter machine at NEMS facility.
 </p>
 </div>
 
-<div id="outline-container-orgf8a1f23" class="outline-5">
-<h5 id="orgf8a1f23"><span class="todo WAIT">WAIT</span> Nb &amp; Ti Target&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Sputter">Sputter</span></span></h5>
-<div class="outline-text-5" id="text-orgf8a1f23">
+<div id="outline-container-orgd7df34c" class="outline-5">
+<h5 id="orgd7df34c"><span class="done DONE">DONE</span> Nb &amp; Ti Target&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Sputter">Sputter</span></span></h5>
+<div class="outline-text-5" id="text-orgd7df34c">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2021-07-16 Fri 09:33]</span></span></p>
 <p>
 Ordered with Gredmann group on 2021-06-07
 </p>
@@ -499,35 +518,58 @@ Mail : bella.leng@gredmann.com
 </div>
 </div>
 
-<div id="outline-container-org32c903e" class="outline-5">
-<h5 id="org32c903e"><span class="todo TODO">TODO</span> Substrate&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Sputter">Sputter</span></span></h5>
+<div id="outline-container-org6b89e12" class="outline-5">
+<h5 id="org6b89e12"><span class="todo HOLD">HOLD</span> Substrate&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Sputter">Sputter</span></span></h5>
+<div class="outline-text-5" id="text-org6b89e12">
+</div>
+<div id="outline-container-orgf083801" class="outline-6">
+<h6 id="orgf083801">Possible substrates:</h6>
+<div class="outline-text-6" id="text-orgf083801">
+<ul class="org-ul">
+<li>SiO2/Si: PVCVD, Lin could help produce these substrates.</li>
+<li>MgO</li>
+<li>Sapphire</li>
+</ul>
+</div>
+</div>
 </div>
 
-<div id="outline-container-orgeb63b18" class="outline-5">
-<h5 id="orgeb63b18"><span class="todo TODO">TODO</span> Discuss Parameters</h5>
+
+<div id="outline-container-org07b57a2" class="outline-5">
+<h5 id="org07b57a2"><span class="todo TODO">TODO</span> Discuss Parameters</h5>
+<div class="outline-text-5" id="text-org07b57a2">
+<ul class="org-ul">
+<li>Target thickness : 300nm</li>
+<li>Substrate : SiO2</li>
+<li>0.2 Pa chamber pressure</li>
+<li>0.9 A discharge current
+should measure 9.1K of Tc</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org24160c4" class="outline-3">
-<h3 id="org24160c4">Sputter Machine Purchase&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Sputter">Sputter</span></span></h3>
-<div class="outline-text-3" id="text-org24160c4">
+
+<div id="outline-container-orgab9061b" class="outline-3">
+<h3 id="orgab9061b">Sputter Machine Purchase&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Sputter">Sputter</span></span></h3>
+<div class="outline-text-3" id="text-orgab9061b">
 </div>
-<div id="outline-container-org2d9da6c" class="outline-4">
-<h4 id="org2d9da6c"><span class="done DONE">DONE</span> Clean room visit</h4>
-<div class="outline-text-4" id="text-org2d9da6c">
+<div id="outline-container-org3d3deb8" class="outline-4">
+<h4 id="org3d3deb8"><span class="done DONE">DONE</span> Clean room visit</h4>
+<div class="outline-text-4" id="text-org3d3deb8">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2021-06-30 Wed 16:12]</span></span></p>
 </div>
 </div>
-<div id="outline-container-org21535de" class="outline-4">
-<h4 id="org21535de"><span class="done DONE">DONE</span> Cost discussion with Lin</h4>
-<div class="outline-text-4" id="text-org21535de">
+<div id="outline-container-orgeb70e6b" class="outline-4">
+<h4 id="orgeb70e6b"><span class="done DONE">DONE</span> Cost discussion with Lin</h4>
+<div class="outline-text-4" id="text-orgeb70e6b">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2021-07-05 Mon 11:02]</span></span></p>
 </div>
 </div>
-<div id="outline-container-org20533dc" class="outline-4">
-<h4 id="org20533dc"><span class="todo WAIT">WAIT</span> Sputter Machine spec</h4>
-<div class="outline-text-4" id="text-org20533dc">
+<div id="outline-container-orga34eb0d" class="outline-4">
+<h4 id="orga34eb0d"><span class="todo WAIT">WAIT</span> Sputter Machine spec</h4>
+<div class="outline-text-4" id="text-orga34eb0d">
 <p>
 <span class="timestamp-wrapper"><span class="timestamp">&lt;2021-05-11 Tue&gt; </span></span> Rough quotation, close to what we need <a href="Todo/2021-07-10_13-20-57_臺灣大學-MGS-500高真空磁控共濺鍍系統2021051101_xlsx.pdf">Quotation1</a>
 </p>
@@ -538,59 +580,79 @@ Mail : bella.leng@gredmann.com
 </div>
 </div>
 
-<div id="outline-container-orgc576b9b" class="outline-4">
-<h4 id="orgc576b9b"><span class="todo WAIT">WAIT</span> Approved by PI</h4>
+<div id="outline-container-orgea21721" class="outline-4">
+<h4 id="orgea21721"><span class="todo WAIT">WAIT</span> Approved by PI</h4>
+</div>
+</div>
+
+
+<div id="outline-container-org64ebf08" class="outline-3">
+<h3 id="org64ebf08">Tc measurement</h3>
+<div class="outline-text-3" id="text-org64ebf08">
+</div>
+<div id="outline-container-org8490440" class="outline-4">
+<h4 id="org8490440"><span class="todo WAIT">WAIT</span> Cryogenic system setup</h4>
+<div class="outline-text-4" id="text-org8490440">
+<ul class="org-ul">
+<li><span class="timestamp-wrapper"><span class="timestamp">&lt;2021-07-16 Fri&gt; </span></span> Waiting for the cryostat head that was sent to America</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd934d26" class="outline-4">
+<h4 id="orgd934d26"><span class="todo TODO">TODO</span> Contact Professor Chen from NCU</h4>
 </div>
 </div>
 </div>
-<div id="outline-container-org80ae130" class="outline-2">
-<h2 id="org80ae130">Device Fabrication</h2>
-<div class="outline-text-2" id="text-org80ae130">
+
+
+<div id="outline-container-orga4e960d" class="outline-2">
+<h2 id="orga4e960d">Device Fabrication&#xa0;&#xa0;&#xa0;<span class="tag"><span class="export">export</span></span></h2>
+<div class="outline-text-2" id="text-orga4e960d">
 <p>
 Here are the needed fabrication and experiment steps for building SNSPD. Many parts is inspired of the work from Glasgow University group, and modified to the equipment we have here.
-<a class='org-ref-reference' href="#erotokritou19_next_gener_super_nanow_singl_photon_detec">erotokritou19_next_gener_super_nanow_singl_photon_detec</a>
 </p>
 </div>
 
-<div id="outline-container-orgecb5aad" class="outline-3">
-<h3 id="orgecb5aad">Sputter</h3>
+<div id="outline-container-org916b4a7" class="outline-3">
+<h3 id="org916b4a7">Sputter</h3>
 </div>
-<div id="outline-container-org7e9220a" class="outline-3">
-<h3 id="org7e9220a">E beam Lithography</h3>
-</div>
-
-<div id="outline-container-org818bab1" class="outline-3">
-<h3 id="org818bab1">Etching</h3>
-</div>
+<div id="outline-container-org0ac5d7a" class="outline-3">
+<h3 id="org0ac5d7a">E beam Lithography</h3>
 </div>
 
-<div id="outline-container-org4eaae45" class="outline-2">
-<h2 id="org4eaae45">Experimental Methods</h2>
-<div class="outline-text-2" id="text-org4eaae45">
-</div>
-<div id="outline-container-orgac7b326" class="outline-3">
-<h3 id="orgac7b326">Cryogenic system&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Cryogenic">Cryogenic</span></span></h3>
-</div>
-<div id="outline-container-orgf56de6c" class="outline-3">
-<h3 id="orgf56de6c">Tc measurement&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Cryogenic">Cryogenic</span>&#xa0;<span class="Characteristic">Characteristic</span></span></h3>
-</div>
-<div id="outline-container-orgc4bd872" class="outline-3">
-<h3 id="orgc4bd872">SEM&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Characteristic">Characteristic</span></span></h3>
-</div>
-<div id="outline-container-orge35e324" class="outline-3">
-<h3 id="orge35e324">Readout system&#xa0;&#xa0;&#xa0;<span class="tag"><span class="DAQ">DAQ</span></span></h3>
-</div>
-<div id="outline-container-orgcd68dcb" class="outline-3">
-<h3 id="orgcd68dcb">Single Photon source&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Characteristic">Characteristic</span>&#xa0;<span class="SinglePhoton">SinglePhoton</span></span></h3>
+<div id="outline-container-orge806e56" class="outline-3">
+<h3 id="orge806e56">Etching</h3>
 </div>
 </div>
-<div id="outline-container-orga382064" class="outline-2">
-<h2 id="orga382064">Log</h2>
-<div class="outline-text-2" id="text-orga382064">
+
+<div id="outline-container-org7c38367" class="outline-2">
+<h2 id="org7c38367">Experimental Methods&#xa0;&#xa0;&#xa0;<span class="tag"><span class="export">export</span></span></h2>
+<div class="outline-text-2" id="text-org7c38367">
 </div>
-<div id="outline-container-org655da3c" class="outline-3">
-<h3 id="org655da3c">2021-07-07 Sputter cost discussion&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Sputter">Sputter</span></span></h3>
-<div class="outline-text-3" id="text-org655da3c">
+<div id="outline-container-orgf60a8dc" class="outline-3">
+<h3 id="orgf60a8dc">Cryogenic system&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Cryogenic">Cryogenic</span></span></h3>
+</div>
+<div id="outline-container-orge49f670" class="outline-3">
+<h3 id="orge49f670">Tc measurement&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Cryogenic">Cryogenic</span>&#xa0;<span class="Characteristic">Characteristic</span></span></h3>
+</div>
+<div id="outline-container-org387620e" class="outline-3">
+<h3 id="org387620e">SEM&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Characteristic">Characteristic</span></span></h3>
+</div>
+<div id="outline-container-org556ab8a" class="outline-3">
+<h3 id="org556ab8a">Readout system&#xa0;&#xa0;&#xa0;<span class="tag"><span class="DAQ">DAQ</span></span></h3>
+</div>
+<div id="outline-container-org3cadec0" class="outline-3">
+<h3 id="org3cadec0">Single Photon source&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Characteristic">Characteristic</span>&#xa0;<span class="SinglePhoton">SinglePhoton</span></span></h3>
+</div>
+</div>
+<div id="outline-container-org7b607fc" class="outline-2">
+<h2 id="org7b607fc">Log&#xa0;&#xa0;&#xa0;<span class="tag"><span class="export">export</span></span></h2>
+<div class="outline-text-2" id="text-org7b607fc">
+</div>
+<div id="outline-container-org7da0f98" class="outline-3">
+<h3 id="org7da0f98"><span class="timestamp-wrapper"><span class="timestamp">&lt;2021-07-05 Mon&gt; </span></span> Sputter cost discussion&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Sputter">Sputter</span></span></h3>
+<div class="outline-text-3" id="text-org7da0f98">
 <p>
 We have two options:
 </p>
@@ -606,24 +668,13 @@ Estimate cost for one thin film : 1k NTD
 </div>
 </div>
 
-<div id="outline-container-orga086ce9" class="outline-2">
-<h2 id="orga086ce9">Reference</h2>
-<div class="outline-text-2" id="text-orga086ce9">
-<p>
-
-<h1 class='org-ref-bib-h1'>Bibliography</h1>
-<ul class='org-ref-bib'><li><a id="morozov18_super_confer_presen">[morozov18_super_confer_presen]</a> <a name="morozov18_super_confer_presen"></a>Dmitry Morozov, Archan Banerjee, Kleanthis Erotokritou, , Gregor Taylor, Nathan Gemmell, Dilini Hemakumara, , Iain Thayne & Robert Hadfield, Superconducting nanowire materials for mid infrared single  photon detection (Conference Presentation), nil, in in: Advanced Photon Counting Techniques XII, edited by (2018)</li>
-<li><a id="taylor20_mid_confer_presen">[taylor20_mid_confer_presen]</a> <a name="taylor20_mid_confer_presen"></a>Gregor Taylor, Dmitry Morozov, Kleanthis Erotokritou, , Shigehito Miki, Hirotaka Terai & Robert Hadfield, Mid infrared single photon detection with superconducting  nanowires (Conference Presentation), nil, in in: Advanced Photon Counting Techniques XIV, edited by (2020)</li>
-<li><a id="NEMS_official">[NEMS_official]</a> <a name="NEMS_official"></a>NEMS, NEMS official website, <i></i>,  . <a href="http://nems.ntu.edu.tw/about.php?lang=zh&pk=1">link</a>.</li>
-<li><a id="erotokritou19_next_gener_super_nanow_singl_photon_detec">[erotokritou19_next_gener_super_nanow_singl_photon_detec]</a> <a name="erotokritou19_next_gener_super_nanow_singl_photon_detec"></a>Kleanthis Erotokritou, Next Generation Superconducting Nanowire Single-Photon  Detectors, <i>University of Glasgow</i>, <b>nil(nil)</b>, nil (2019). <a href="https://doi.org/10.5525/GLA.THESIS.41108">link</a>. <a href="http://dx.doi.org/10.5525/GLA.THESIS.41108">doi</a>.</li>
-</ul>
-</p>
-</div>
+<div id="outline-container-org92ab5b4" class="outline-2">
+<h2 id="org92ab5b4">Reference&#xa0;&#xa0;&#xa0;<span class="tag"><span class="export">export</span></span></h2>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Hsin-Yeh Wu</p>
-<p class="date">Created: 2021-07-10 Sat 13:24</p>
+<p class="date">Created: 2021-07-16 Fri 15:46</p>
 </div>
 </body>
 </html>
